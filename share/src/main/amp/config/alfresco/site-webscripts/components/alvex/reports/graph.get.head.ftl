@@ -1,4 +1,4 @@
-<#include "/form.get.head.ftl">
+<#include "/com/alvexcore/components/form/form.get.head.ftl">
 <![if !IE]>
 <@script type="text/javascript" src="${page.url.context}/res/components/d3/d3.v3.js" />
 <![endif]>
