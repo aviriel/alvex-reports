@@ -1,0 +1,11 @@
+<webscript>
+  <shortname>get-report-data</shortname>
+  <description><![CDATA[
+  Get report data
+  ]]></description>
+  <url>/api/alvex/reports/data?reportRef={reportRef}</url>
+  <format default="json"/>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>public_api</lifecycle>
+</webscript>

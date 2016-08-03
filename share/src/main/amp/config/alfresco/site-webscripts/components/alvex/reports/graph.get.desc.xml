@@ -1,0 +1,5 @@
+<webscript>
+	<shortname>alvex-reports-graph</shortname>
+	<description>Renders graph</description>
+	<url>/components/alvex/reports/graph</url>
+</webscript>

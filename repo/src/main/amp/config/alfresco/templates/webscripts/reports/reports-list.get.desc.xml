@@ -1,0 +1,11 @@
+<webscript>
+  <shortname>reports-list</shortname>
+  <description><![CDATA[
+  Lists available reports
+  ]]></description>
+  <url>/api/alvex/reports/list</url>
+  <format default="json"/>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>public_api</lifecycle>
+</webscript>

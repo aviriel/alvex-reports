@@ -1,0 +1,39 @@
+<alfresco-config>
+
+	<config evaluator="string-compare" condition="DocumentLibrary">
+		<aspects>
+			<visible>
+				<aspect name="alvexrp:parameterizable" />
+			</visible>
+
+			<addable>
+			</addable>
+			<removeable>
+			</removeable>
+		</aspects>
+	</config>
+
+	<config  evaluator="node-type" condition="cm:content">
+		<forms>
+			<form>
+				<field-visibility>
+					<show id="alvexrp:parametersString" />
+				</field-visibility>
+			</form>
+
+			<form id="doclib-simple-metadata">
+				<field-visibility>
+					<show id="alvexrp:parametersString" />
+				</field-visibility>
+				<edit-form template="../documentlibrary/forms/doclib-simple-metadata.ftl" />
+			</form>
+
+			<form id="doclib-inline-edit">
+				<field-visibility>
+					<show id="alvexrp:parametersString" />
+				</field-visibility>
+			</form>
+		</forms>
+	</config>
+
+</alfresco-config>

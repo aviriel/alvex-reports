@@ -1,0 +1,84 @@
+<view:view xmlns:view="http://www.alfresco.org/view/repository/1.0"
+		xmlns:cm="http://www.alfresco.org/model/content/1.0"
+		xmlns:app="http://www.alfresco.org/model/application/1.0" 
+		xmlns:alvexrp="http://alvexcore.com/prefix/alvexrp">
+
+	<cm:folder view:childName="app:reports">
+		<app:uifacets />
+		<cm:name>reports</cm:name>
+		<cm:title></cm:title>
+		<cm:description></cm:description>
+		<cm:contains>
+			<!--cm:content>
+				<app:uifacets />
+				<cm:name>test-report.js</cm:name>
+				<cm:title>Test report</cm:title>
+				<cm:description>Sample static data</cm:description>
+				<cm:content>contentUrl=classpath:alfresco/bootstrap/test-report.js|mimetype=text/plain|size=|encoding=UTF-8</cm:content>
+			</cm:content-->
+			<cm:content>
+				<app:uifacets />
+				<cm:name>active-workflows.js</cm:name>
+				<cm:title>Active Workflows</cm:title>
+				<cm:description>Overview of currently running workflows</cm:description>
+				<cm:content>contentUrl=classpath:alfresco/bootstrap/active-workflows.js|mimetype=text/plain|size=|encoding=UTF-8</cm:content>
+			</cm:content>
+			<cm:content>
+				<view:aspects>
+					<alvexrp:parameterizable />
+				</view:aspects>
+				<app:uifacets />
+				<cm:name>completed-workflows.js</cm:name>
+				<cm:title>Completed Workflows</cm:title>
+				<cm:description>Overview of completed workflows</cm:description>
+				<alvexrp:parametersString>from={date|-7d}&amp;until={date|0d}</alvexrp:parametersString>
+				<cm:content>contentUrl=classpath:alfresco/bootstrap/completed-workflows.js|mimetype=text/plain|size=|encoding=UTF-8</cm:content>
+			</cm:content>
+			<cm:content>
+				<view:aspects>
+					<alvexrp:parameterizable />
+				</view:aspects>
+				<app:uifacets />
+				<cm:name>current-tasks.js</cm:name>
+				<cm:title>Current tasks</cm:title>
+				<cm:description>Number of tasks the members of your team are working on now</cm:description>
+				<alvexrp:parametersString>user={person|*}</alvexrp:parametersString>
+				<cm:content>contentUrl=classpath:alfresco/bootstrap/current-tasks.js|mimetype=text/plain|size=|encoding=UTF-8</cm:content>
+			</cm:content>
+			<cm:content>
+				<view:aspects>
+					<alvexrp:parameterizable />
+				</view:aspects>
+				<app:uifacets />
+				<cm:name>completed-tasks.js</cm:name>
+				<cm:title>Completed tasks</cm:title>
+				<cm:description>Number of tasks the members of your team completed</cm:description>
+				<alvexrp:parametersString>user={person|*}&amp;from={date|-7d}&amp;until={date|0d}</alvexrp:parametersString>
+				<cm:content>contentUrl=classpath:alfresco/bootstrap/completed-tasks.js|mimetype=text/plain|size=|encoding=UTF-8</cm:content>
+			</cm:content>
+			<cm:content>
+				<view:aspects>
+					<alvexrp:parameterizable />
+				</view:aspects>
+				<app:uifacets />
+				<cm:name>documents-registration.js</cm:name>
+				<cm:title>New documents in registers</cm:title>
+				<cm:description>Total number of new documents registered</cm:description>
+				<alvexrp:parametersString>from={date|-7d}&amp;until={date|0d}</alvexrp:parametersString>
+				<cm:content>contentUrl=classpath:alfresco/bootstrap/documents-registration.js|mimetype=text/plain|size=|encoding=UTF-8</cm:content>
+			</cm:content>
+			<cm:content>
+				<view:aspects>
+					<alvexrp:parameterizable />
+				</view:aspects>
+				<app:uifacets />
+				<cm:name>workflow-performance.js</cm:name>
+				<cm:title>Workflows duration</cm:title>
+				<cm:description>How many days it takes to complete different workflows</cm:description>
+				<alvexrp:parametersString>from={date|-7d}&amp;until={date|0d}&amp;workflow={text|*}</alvexrp:parametersString>
+				<cm:content>contentUrl=classpath:alfresco/bootstrap/workflow-performance.js|mimetype=text/plain|size=|encoding=UTF-8</cm:content>
+			</cm:content>
+		</cm:contains>
+	</cm:folder>
+
+</view:view>

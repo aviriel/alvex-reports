@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.alvexcore.share</groupId>
-    <artifactId>workflow-shortcut-dashlet</artifactId>
+    <artifactId>reports</artifactId>
     <version>1.1</version>
-    <name>Alvex Workflow Shortcut Dashlet [Share]</name>
+    <name>Alvex Reports [Share]</name>
     <packaging>${packaging.type}</packaging>
 
     <parent>

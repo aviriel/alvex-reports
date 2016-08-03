@@ -1,0 +1,8 @@
+<webscript>
+	<shortname>Export Report to Xlsx</shortname>
+	<url>/api/alvex/reports/export/xlsx</url>
+	<authentication>user</authentication>
+	<format default="json"/>
+	<transaction>required</transaction>
+	<lifecycle>public_api</lifecycle>
+</webscript>

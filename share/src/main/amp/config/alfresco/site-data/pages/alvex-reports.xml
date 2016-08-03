@@ -1,0 +1,8 @@
+<page>
+	<title>Alvex Reports</title>
+	<title-id>page.alvex-reports.title</title-id>
+	<description>Alvex Reports</description>
+	<description-id>page.alvex-reports.description</description-id>
+	<template-instance>alvex-reports</template-instance>
+	<authentication>user</authentication>
+</page>

@@ -1,0 +1,5 @@
+<webscript>
+	<shortname>alvex-reports-menu</shortname>
+	<description>Renders menu</description>
+	<url>/components/alvex/reports/menu</url>
+</webscript>

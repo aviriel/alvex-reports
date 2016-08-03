@@ -1,0 +1,44 @@
+/* Graph CSS */
+
+#alvex-reports
+{
+	border-top: 1px solid #ccc;
+}
+
+.axis text {
+	font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.bar {
+	fill: steelblue;
+	fill-opacity: .9;
+}
+
+.x.axis path {
+	display: none;
+}
+
+/* Menu CSS */
+
+.filter h2
+{
+	margin-top: 1em;
+}
+
+.filter ul
+{
+	padding: 0.5em 0 1em;
+}
+
+.filter li
+{
+	overflow-x: hidden;
+	padding: 4px 0px 3px 20px;
+}
