@@ -28,7 +28,8 @@ public class WorkflowShortcutDashletExtension extends ShareExtension {
 	// constructor
 	public WorkflowShortcutDashletExtension() throws Exception {
 		id = "workflow-shortcut-dashlet";
-		fileListPath = "alvex-workflow-shortcut-dashlet-file-list.txt";
-		extInfoPath = "alvex-workflow-shortcut-dashlet.properties";
+		// Quick fix 'cannot find symbol' bug
+        //fileListPath = "alvex-workflow-shortcut-dashlet-file-list.txt";
+		//extInfoPath = "alvex-workflow-shortcut-dashlet.properties";
 	}
 }

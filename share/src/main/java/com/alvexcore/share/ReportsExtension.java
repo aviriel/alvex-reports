@@ -26,7 +26,8 @@ public class ReportsExtension extends ShareExtension {
 	// constructor
 	public ReportsExtension() throws Exception {
 		id = "reports";
-		fileListPath = "alvex-reports-file-list.txt";
-		extInfoPath = "alvex-reports.properties";
+        // Quick fix of 'cannot find symbol' bug
+		//fileListPath = "alvex-reports-file-list.txt";
+		//extInfoPath = "alvex-reports.properties";
 	}
 }
