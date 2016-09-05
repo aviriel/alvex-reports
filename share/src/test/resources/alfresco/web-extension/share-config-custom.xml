@@ -10,17 +10,9 @@
 
             <!--
                  We don't need to do this when we have the new refresh mojos in the Alfresco plug-in.
-<<<<<<< HEAD
-
                  If resource caching has been disabled then all the dependency caches will be cleared
                  before processing the Aikau jsonModel request...
                     (i.e. this.dojoDependencyHandler.clearCaches() )
-
-=======
-                 If resource caching has been disabled then all the dependency caches will be cleared
-                 before processing the Aikau jsonModel request...
-                    (i.e. this.dojoDependencyHandler.clearCaches() )
->>>>>>> 68142e6cc737b2b67a9c790bec3569ccc30fade6
                  For more information see the Aikau source code: https://github.com/Alfresco/Aikau
             -->
             <disable-resource-caching>false</disable-resource-caching>
@@ -47,11 +39,7 @@
         It seems Share has issues on 4.2.x with the embedded tomcat and CSRFPolicy
         -->
     <config evaluator="string-compare" condition="CSRFPolicy" replace="true">
-<<<<<<< HEAD
-	    <filter/>
-=======
         <filter/>
->>>>>>> 68142e6cc737b2b67a9c790bec3569ccc30fade6
     </config>
 
     <!--
@@ -99,7 +87,3 @@
         </remote>
     </config>
 </alfresco-config>
-<<<<<<< HEAD
-
-=======
->>>>>>> 68142e6cc737b2b67a9c790bec3569ccc30fade6
