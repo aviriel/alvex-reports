@@ -20,11 +20,10 @@ for ( d in defs )
   var num = 0;
   for each( inst in insts )
   {
-    var end = inst.getEndDate();
+    var end = inst.endDate;
     end.setHours(0);
     end.setMinutes(0);
     end.setSeconds(0);
-    end.setMilliseconds(0);
     if( (end.getTime() >= from.getTime() ) && (end.getTime() <= until.getTime()) )
       num++;
   }

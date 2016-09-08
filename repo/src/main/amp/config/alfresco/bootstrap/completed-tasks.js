@@ -39,7 +39,7 @@ model.data = [];
 for each( user in users)
 {
   var connector = remoteService.connect("alfresco");
-  var resp = eval('(' + connector.get('/api/task-instances?authority=' + encodeURIComponent(user.userName) + '&state=COMPLETED&alf_ticket=' + ticket) + ')');
+  var resp = eval('(' + connector.get('/api/alvex/task-instances?authority=' + encodeURIComponent(user.userName) + '&state=COMPLETED&alf_ticket=' + ticket) + ')');
   var tasks = [];
   for each(task in resp.data)
   {
