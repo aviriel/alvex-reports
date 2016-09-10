@@ -40,16 +40,14 @@ for each( type in types )
   var insts = workflowHelper.getCompletedWorkflowInstances( type );
   for each( inst in insts )
   {
-    var end = inst.getEndDate();
+    var end = inst.endDate;
     end.setHours(0);
     end.setMinutes(0);
     end.setSeconds(0);
-    end.setMilliseconds(0);
-    var start = inst.getStartDate();
+    var start = inst.startDate;
     start.setHours(0);
     start.setMinutes(0);
     start.setSeconds(0);
-    start.setMilliseconds(0);
     if( (end.getTime() >= from.getTime() ) && (end.getTime() <= until.getTime()) )
     {
       var days = parseInt( ( end.getTime() - start.getTime() ) / (24*60*60*1000) );
